@@ -1,0 +1,36 @@
+.modal-overlay {
+  display: flex;
+  padding: 20px;
+}
+
+.modal {
+  margin: auto;
+  background-color: var(--main-bg-color);
+  box-sizing: border-box;
+  padding: 8px 24px 16px;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.close-modal {
+  color: #fff;
+  background-color: transparent;
+  display: flex;
+  margin: 0 -18px 0 auto;
+}
+
+.close-modal .close-icon {
+  font-size: 32px;
+  color: var(--main-text-color);
+}
+
+@media all and (max-width: 425px) {
+  .modal-overlay {
+    padding: 10px;
+  }
+}
