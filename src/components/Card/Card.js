@@ -1,16 +1,16 @@
 import React from 'react';
 import CardActions from './CardActions';
 
-const Card = ({ title, content, isAdmin }) => {
+const Card = ({ card, user, setCardToUpdate, openCardForm }) => {
 
   return (
     <div className='card'>
       <div className='card-header'>
-        <p>{ title }</p>
-        { isAdmin ? <CardActions /> : null }
+        <p>{ card.title }</p>
+        { user && <CardActions card={card} setCardToUpdate={setCardToUpdate} openCardForm={openCardForm} /> }
       </div>
 
-      <div className='content'>{ content }</div>
+      <div className='content'>{ card.content }</div>
     </div>
   );
 };

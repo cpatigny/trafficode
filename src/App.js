@@ -10,6 +10,7 @@ import Loading from './components/Loading/Loading';
 import Footer from './components/Footer/Footer';
 import Modal from './components/Modal/Modal';
 import CardForms from './components/CardForms/CardForms';
+import AddCardButton from './components/AddCardButton/AddCardButton';
 
 const App = () => {
   
@@ -36,7 +37,12 @@ const App = () => {
       .catch(error => console.error(error));
   };
 
-  const closeCardForm = () => setShowCardForm(false);
+  const openCardForm = () => setShowCardForm(true);
+
+  const closeCardForm = () => {
+    setShowCardForm(false);
+    setCardToUpdate(false);
+  };
 
   if (user === 'loading' || userData === 'loading') return <Loading />;
 
@@ -44,15 +50,16 @@ const App = () => {
     <div className='app'>
       <h1>
         Code de la route
-        { user && <button onClick={() => setShowCardForm(true)}>+ Add card</button> }
+        { user && <AddCardButton openCardForm={openCardForm}>+ Add card</AddCardButton> }
       </h1>
 
       {cards && Object.keys(cards).map(key => (
         <Card
           key={key}
-          id={key}
-          title={cards[key].title}
-          content={cards[key].content} 
+          user={user}
+          card={{ ...cards[key], id: key }}
+          setCardToUpdate={setCardToUpdate}
+          openCardForm={openCardForm}
         />
       ))}
 

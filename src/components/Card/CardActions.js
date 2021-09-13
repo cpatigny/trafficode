@@ -1,6 +1,14 @@
 import React from 'react';
 
-const CardActions = ({ editCard, deleteCard }) => {
+const CardActions = ({ card, setCardToUpdate, openCardForm }) => {
+
+  const editCard = () => {
+    setCardToUpdate(card);
+    openCardForm();
+  };
+
+  const deleteCard = () => {};
+
   return (
     <div className='card-actions'>
       <button onClick={editCard}>Edit</button>

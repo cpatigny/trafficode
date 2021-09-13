@@ -4,6 +4,22 @@
   margin: 0 auto;
 }
 
+#add-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 12px 7px 6px;
+}
+
+#add-card .btn-text {
+  margin-left: 4px;
+}
+
+.card {
+  background-color: rgb(68, 68, 68);
+  margin-bottom: 8px;
+}
+
 @media all and (min-width: 1024px) {
   .app {
     max-width: 800px;
