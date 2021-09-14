@@ -6,7 +6,7 @@ const Card = ({ card, user, setCardToUpdate, openCardForm }) => {
   return (
     <div className='card'>
       <div className='card-header'>
-        <p>{ card.title }</p>
+        <h3 className='card-title'>{ card.title }</h3>
         { user && <CardActions card={card} setCardToUpdate={setCardToUpdate} openCardForm={openCardForm} /> }
       </div>
 

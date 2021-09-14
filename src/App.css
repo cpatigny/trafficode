@@ -16,8 +16,15 @@
 }
 
 .card {
-  background-color: rgb(68, 68, 68);
-  margin-bottom: 8px;
+  background-color: var(--second-bg-color);
+  margin-bottom: 15px;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.card .card-title {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
 }
 
 @media all and (min-width: 1024px) {

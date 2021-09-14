@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Manager from '../../services/firebase/Manager';
 
 const AddCardForm = ({ closeModal }) => {
@@ -7,6 +7,12 @@ const AddCardForm = ({ closeModal }) => {
     title: '',
     content: ''
   });
+
+  let titleRef = useRef(null);
+
+  useEffect(() => {
+    titleRef.current.focus();
+  }, [])
 
   const handleChange = e => {
     const { value, name } = e.target;
@@ -29,6 +35,7 @@ const AddCardForm = ({ closeModal }) => {
         <input
           id='title'
           type='text'
+          ref={titleRef}
           required
           placeholder='Mon super titre'
           name='title'
