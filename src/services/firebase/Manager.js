@@ -1,5 +1,5 @@
-import firebase from './firebase';
-import { getDatabase, ref, onValue, get, set, update, remove, push } from "firebase/database";
+import './firebase';
+import { getDatabase, ref, onValue, get, set, update, remove, push } from 'firebase/database';
 
 export default class Manager {
 

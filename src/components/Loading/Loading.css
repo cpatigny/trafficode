@@ -22,7 +22,7 @@
 }
 
 .loading .dot {
-  background-color: rgb(0, 87, 138);
+  background-color: var(--main-color);
   border-radius: 50%;
 	width: 18px;
 	height: 18px;

@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react';
 import { Redirect, useHistory } from 'react-router-dom';
 import { UserContext } from '../../providers/UserProvider';
 
+import './Login.css';
+
 import signIn from '../../services/firebase/signIn';
 
 const Login = () => {
@@ -35,7 +37,7 @@ const Login = () => {
 
   return (
     <div className='login'>
-      Login
+      <h1>Login</h1>
 
       <div className='form-container'>
         <form onSubmit={handleSignIn}>
@@ -61,7 +63,7 @@ const Login = () => {
               value={loginFormData.password}
               onChange={handleChange} />
           </div>
-          <button>Se connecter</button>
+          <button className='btn btn-primary'>Se connecter</button>
         </form>
       </div>
     </div>

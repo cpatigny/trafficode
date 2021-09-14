@@ -1,6 +1,8 @@
 import React from 'react';
 import CardActions from './CardActions';
 
+import './Card.css';
+
 const Card = ({ card, user, setCardToUpdate, openCardForm }) => {
 
   return (

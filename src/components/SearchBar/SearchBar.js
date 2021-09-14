@@ -22,20 +22,18 @@ const SearchBar = ({ search, setSearch }) => {
   );
 
   return (
-    <div className='search-bar-container'>
-      <div className='search-bar'>
-        <input
-          name='search'
-          type='text'
-          autoComplete='off'
-          placeholder='Chercher un mot'
-          aria-label='Chercher un mot'
-          value={search}
-          onChange={handleChange}
-        />
+    <div className='search-bar'>
+      <input
+        name='search'
+        type='text'
+        autoComplete='off'
+        placeholder='Chercher un mot'
+        aria-label='Chercher un mot'
+        value={search}
+        onChange={handleChange}
+      />
 
-        { search ? clearBtn : <span id='search-icon' className='material-icons-round'>search</span> }
-      </div>
+      { search ? clearBtn : <span id='search-icon' className='material-icons-round'>search</span> }
     </div>
   );
 }

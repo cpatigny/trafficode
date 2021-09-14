@@ -1,0 +1,34 @@
+.card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card .card-title {
+  margin: 0;
+}
+
+.card .card-actions button {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--main-border-radius);
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.card .card-actions button span {
+  display: block;
+}
+
+.card-actions #edit-card {
+  color: #eb9e21ff;
+  background-color: rgba(235, 158, 33, 0.1);
+  margin-right: 8px;
+}
+
+.card-actions #delete-card {
+  color: #FF4738;
+  background-color: rgba(255, 71, 56, 0.1);
+}

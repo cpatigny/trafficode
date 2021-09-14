@@ -19,12 +19,87 @@
   background-color: var(--second-bg-color);
   margin-bottom: 15px;
   padding: 25px;
-  border-radius: 12px;
+  border-radius: var(--main-border-radius);
 }
 
 .card .card-title {
   margin: 0 0 8px;
   font-size: 1.8rem;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top h1 {
+  position: relative;
+  font-size: var(--h2-size);
+}
+
+.top h1:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 60%;
+  background-color: var(--main-color);
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 10px;
+}
+
+.wrap h2 {
+  margin: 0;
+}
+
+footer {
+  background-color: var(--second-bg-color);
+  padding: 15px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--main-border-radius);
+  margin: 24px 0 50px;
+  font-size: var(--text-size);
+}
+
+footer .name {
+  position: relative;
+}
+
+footer .admin a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  position: relative;
+}
+
+.sign-out {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  color: var(--main-text-color);
+  padding: 0;
+}
+
+footer .name:after,
+footer .admin a:after,
+footer .sign-out:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--main-color);
 }
 
 @media all and (min-width: 1024px) {

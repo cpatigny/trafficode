@@ -31,8 +31,8 @@ const CardActions = ({ card, setCardToUpdate, openCardForm }) => {
 
   return (
     <div className='card-actions'>
-      <button onClick={editCard}>Edit</button>
-      <button onClick={deleteCard}>Delete</button>
+      <button id='edit-card' onClick={editCard}><span class="material-icons-round">edit</span></button>
+      <button id='delete-card' onClick={deleteCard}><span class="material-icons-round">delete</span></button>
     </div>
   );
 };
