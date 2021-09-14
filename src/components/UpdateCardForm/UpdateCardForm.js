@@ -55,7 +55,7 @@ const UpdateCardForm = ({ cardToUpdate, closeModal }) => {
           placeholder='Écrivez le contenu ici'
         ></textarea>
       </div>
-      <button>Modifier</button>
+      <button className='btn btn-primary'>Modifier</button>
     </form>
   );
 };

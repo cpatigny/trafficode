@@ -15,18 +15,6 @@
   margin-left: 4px;
 }
 
-.card {
-  background-color: var(--second-bg-color);
-  margin-bottom: 15px;
-  padding: 25px;
-  border-radius: var(--main-border-radius);
-}
-
-.card .card-title {
-  margin: 0 0 8px;
-  font-size: 1.8rem;
-}
-
 .top {
   display: flex;
   align-items: center;
@@ -58,6 +46,28 @@
 
 .wrap h2 {
   margin: 0;
+}
+
+.card-form input {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: #2C3034;
+  color: var(--main-text-color);
+  margin-bottom: 18px;
+}
+
+.card-form > button {
+  border-radius: 8px;
+  padding: 8px 6px;
+  display: block;
+  margin-top: 14px;
+}
+
+.card-form #content {
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: var(--main-text-color);
+  height: 100px;
 }
 
 footer {

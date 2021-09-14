@@ -1,18 +1,35 @@
+.card {
+  background-color: var(--second-bg-color);
+  margin-bottom: 15px;
+  padding: 25px;
+  border-radius: var(--main-border-radius);
+}
+
 .card .card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .card .card-title {
-  margin: 0;
+  margin: 0 0 8px;
+  font-size: 2.1rem;
+  position: relative;
+}
+
+.card .card-title:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 70%;
+  background-color: var(--main-color);
 }
 
 .card .card-actions button {
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
   border-radius: var(--main-border-radius);
   border-radius: 50%;
   padding: 7px;
@@ -31,4 +48,62 @@
 .card-actions #delete-card {
   color: #FF4738;
   background-color: rgba(255, 71, 56, 0.1);
+}
+
+.card .content {
+  font-size: var(--text-size);
+  line-height: 160%;
+}
+
+.card .content :nth-child(1) {
+  margin-top: 0;
+}
+
+.card .content :nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.card .content a,
+.card .content p,
+.card .content li {
+  font-size: var(--text-size);
+}
+
+.card .content p {
+  margin-top: 8px;
+}
+
+.card .content h3 {
+  font-size: 1.7rem;
+  margin-bottom: 8px;
+}
+
+.card .content h4 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.card .content a {
+  position: relative;
+  color: var(--main-text-color);
+  text-decoration: underline var(--main-color) 2px;
+  text-underline-offset: 3px;
+}
+
+.card .content ul {
+  padding-left: 35px;
+}
+
+.card .content ul li {
+  margin-bottom: 4px;
+}
+
+.card .content .arrow-item {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.card .content .arrow-item .arrow-right {
+  margin: 5px 8px 5px 0;
 }

@@ -5,7 +5,7 @@
 
 .modal {
   margin: auto;
-  background-color: var(--main-bg-color);
+  background-color: var(--second-bg-color);
   box-sizing: border-box;
   padding: 8px 24px 16px;
   border-radius: 6px;

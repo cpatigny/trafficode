@@ -55,7 +55,7 @@ const AddCardForm = ({ closeModal }) => {
           placeholder='Écrivez le contenu ici'
         ></textarea>
       </div>
-      <button>Ajouter</button>
+      <button className='btn btn-primary'>Ajouter</button>
     </form>
   );
 };
