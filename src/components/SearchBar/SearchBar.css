@@ -40,3 +40,20 @@
 .search-bar .clear-search {
   right: 10px;
 }
+
+@media all and (max-width: 580px) {
+  .search-bar {
+    max-width: 55%;
+  }
+
+  .search-bar input {
+    padding: 10px 50px 10px 20px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .search-bar {
+    max-width: 100%;
+    margin-top: 8px;
+  }
+}

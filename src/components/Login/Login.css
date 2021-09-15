@@ -1,13 +1,26 @@
+.container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
 .login {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--second-bg-color);
-  padding: 18px 25px;
   border-radius: var(--main-border-radius);
+  background-color: var(--second-bg-color);
   max-width: 380px;
   width: 100%;
+  box-sizing: border-box;
+  padding: 18px 25px;
 }
 
 .login h1 {
@@ -27,4 +40,10 @@
   padding: 8px 6px;
   display: block;
   margin-top: 8px;
+}
+
+@media all and (max-width: 425px) {
+  .container {
+    padding: 10px;
+  }
 }

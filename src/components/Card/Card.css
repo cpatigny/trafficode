@@ -9,6 +9,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 8px;
   margin-bottom: 25px;
 }
 
@@ -27,6 +29,10 @@
   height: 2px;
   width: 70%;
   background-color: var(--main-color);
+}
+
+.card .card-actions {
+  white-space: nowrap;
 }
 
 .card .card-actions button {
@@ -105,4 +111,47 @@
 
 .card .content .arrow-item .arrow-right {
   margin: 5px 8px 5px 0;
+}
+
+@media all and (max-width: 630px) {
+  .card .card-title:after {
+    display: none;
+  }
+
+  .card .card-title {
+    text-decoration: underline var(--main-color) 2px;
+    text-underline-offset: 8px;
+  }
+
+  .card-actions #edit-card {
+    margin-right: 6px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .card {
+    padding: 20px;
+  }
+
+  .card .card-title {
+    font-size: 1.9rem;
+  }
+
+  .card .content h3 {
+    font-size: 1.6rem;
+  }
+  
+  .card .content h4 {
+    font-size: 1.3rem;
+  }
+
+  .card .content .arrow-item {
+    padding-left: 0;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .card .content ul {
+    padding-left: 20px;
+  }
 }
