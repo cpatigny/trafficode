@@ -39,7 +39,7 @@ const App = () => {
 
   useEffect(() => {
 
-    if (cards === 'loading') return;
+    if (cards === 'loading' || cards === null) return;
 
     let matchingCards = {};
 

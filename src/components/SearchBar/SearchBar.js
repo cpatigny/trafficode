@@ -27,8 +27,8 @@ const SearchBar = ({ search, setSearch }) => {
         name='search'
         type='text'
         autoComplete='off'
-        placeholder='Chercher un mot'
-        aria-label='Chercher un mot'
+        placeholder='Chercher une fiche'
+        aria-label='Chercher une fiche'
         value={search}
         onChange={handleChange}
       />

@@ -95,12 +95,11 @@
 }
 
 .card .content ul li {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .card .content .arrow-item {
   display: flex;
-  align-items: center;
   padding-left: 12px;
 }
 

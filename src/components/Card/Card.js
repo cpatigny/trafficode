@@ -11,7 +11,7 @@ const Card = ({ card, user, setCardToUpdate, openCardForm }) => {
   let { title, content } = card;
 
   let arrowItem = `<div className='arrow-item'><span class="arrow-right material-icons-round">arrow_forward</span>$1</div>`;
-  let contentToShow = content.replace(/->(.*)/g, arrowItem);
+  let contentToShow = content.replace(/->>(.*)/g, arrowItem);
 
   return (
     <div className='card'>
