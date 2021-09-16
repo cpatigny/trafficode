@@ -66,11 +66,17 @@
   margin-top: 14px;
 }
 
+.card-form input,
+.card-form #content {
+  font-size: var(--text-size);
+}
+
 .card-form #content {
   padding: 8px 10px;
   border-radius: 6px;
   color: var(--main-text-color);
-  height: 100px;
+  height: 200px;
+  line-height: 150%;
 }
 
 footer {
