@@ -79,6 +79,11 @@
   margin-top: 8px;
 }
 
+.card .content img {
+  border-radius: var(--main-border-radius);
+  width: 100%;
+}
+
 .card .content h3 {
   font-size: 1.7rem;
   margin-bottom: 8px;
