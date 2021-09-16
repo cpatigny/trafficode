@@ -82,6 +82,7 @@
 .card .content img {
   border-radius: var(--main-border-radius);
   width: 100%;
+  filter: brightness(80%);
 }
 
 .card .content h3 {
