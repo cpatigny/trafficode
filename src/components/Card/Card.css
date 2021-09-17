@@ -79,6 +79,10 @@
   margin-top: 8px;
 }
 
+.card .content a {
+  word-break: break-all;
+}
+
 .card .content img {
   border-radius: var(--main-border-radius);
   width: 100%;
